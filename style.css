@@ -6,5 +6,5 @@
 .conatiner{
     display: flex;
     justify-content: space-around;
-    width: ;
+    width:100% ;
 }
