@@ -6,24 +6,381 @@
     <title>social media</title>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="conatiner">
-        <h2 class="logo">
-            SnapSavyy
-        </h2>
-        <div class="search-bar">
-            <i class="uil uil-search-alt"></i>
-            <input type="search" placeholder="search for creator , inspiration and projects ">
-
-        </div>
-        <div class="create">
-            <label for="create-post">create</label>
-            <div class="profile-pic">
-                
+    <nav>
+        <div class="container">
+            <h2 class="logo">
+                SnapSavyy
+            </h2>
+            <div class="search-bar">
+                <i class="uil uil-search-alt"></i>
+                <input type="search" placeholder="search for creator , inspiration and projects ">
+    
+            </div>
+            <div class="create">
+                <label class= "btn btn-primary" for="create-post">create</label>
+                <div class="profile-pic">
+                    <img src="/asset/profile-1.jpg" alt="profile">
+                    
+                </div>
             </div>
         </div>
-    </div>
+
+    </nav>
+    <!---------main -------->
+    <main>
+        <div class="container">
+            <div class="left">
+                <a class="profile">
+                    <div class="profile-pic">
+                        <img src="/asset/profile-1.jpg" >
+                    </div>
+                    <div class="handle">
+                        <h4>
+                           shraddha chaurasia  
+                        </h4>
+                        <p class="text-muted">
+                            @shraddha_c02
+                        </p>
+                    </div>
+                </a>
+                 <!---------sidebar -------->
+                <div class="sidebar">
+                    <a class="menu-item active">
+                        <span><i class="uil uil-house-user"></i></span><h3>home</h3> 
+                     </a>
+                    <a class="menu-item ">
+                            <span><i class="uil uil-compass"></i></span><h3>Explore</h3>
+                    </a>
+                    <a class="menu-item " id="notification">
+                            <span> <i class="uil uil-bell"> <small class="notification-count">9+</small></i></span><h3>Notifications</h3>
+                                <!----notification op up---->
+                                <div class="notification-popup" >
+                                    <div>
+                                        <div class="profile-pic">
+                                            <img src="/asset/profile-7.jpg">
+                                        </div>
+                                        <div class="notofication-body">
+                                            <b>sanya rana </b>accepted friend request
+                                            <small class="text-muted">2 DAYS AGO</small>
+                                        </div>
+                                             <!----popup 1--->
+                                        <div class="profile-pic">
+                                            <img src="/asset/profile-2.jpg">
+                                        </div>
+                                        <div class="notofication-body">
+                                            <b>ruhani  </b>commented on your post
+                                            <small class="text-muted">just now</small>
+                                        </div>
+                                             <!----popup 2---->
+                                        <div class="profile-pic">
+                                            <img src="/asset/profile-3.jpg">
+                                        </div>
+                                        <div class="notofication-body">
+                                            <b>shweta </b>messaged you
+                                            <small class="text-muted">1 min ago</small>
+                                        </div>
+                                             <!----popup 3---->
+                                        <div class="profile-pic">
+                                            <img src="/asset/profile-4.jpg">
+                                        </div>
+                                             <!----popup 4---->
+                                        <div class="notofication-body">
+                                            <b>payal </b>put you on their story
+                                            <small class="text-muted">5 hr ago</small>
+                                        </div>
+                                             <!----popup 5---->
+                                        <div class="profile-pic">
+                                            <img src="/asset/profile-5.jpg">
+                                        </div>
+                                        <div class="notofication-body">
+                                            <b>priya </b>liked your post
+                                            <small class="text-muted">4 min ago</small>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!----end of popup---->
+                     </a>
+                    <a class="menu-item " id="messages-notification">
+                            <span><i class="uil uil-message"> <small class="notification-count">4+</small></i> </span><h3>Messages</h3>
+                    </a>
+                     <a class="menu-item ">
+                       <span><i class="uil uil-palette"></i></span><h3>Theme</h3>
+                    </a>
+                    <a class="menu-item ">
+                            <span><i class="uil uil-sliders-v"></i></span><h3>Settings</h3>
+                    </a>
+                </div>
+                <label  class="btn btn-primary" for="create-post">Create post</label>
+            </div>
+
+
+
+
+
+            <div class="middle"> 
+                <!-------------------stories---------------------->
+                <div class="stories">
+                    <div class="story">
+                        <div class="profile-pic">
+                            <img src="/asset/profile-1.jpg" >
+
+                        </div>
+                        <p class="name">your story</p>
+                    </div>
+
+                    <div class="story">
+                        <div class="profile-pic">
+                            <img src="/asset/profile-4.jpg" >
+
+                        </div>
+                        <p class="name">payal story</p>
+                    </div>
+
+                    <div class="story">
+                        <div class="profile-pic">
+                            <img src="/asset/profile-3.jpg" >
+
+                        </div>
+                        <p class="name">shweta story</p>
+                    </div>
+
+                    <div class="story">
+                        <div class="profile-pic">
+                            <img src="/asset/profile-7.jpg" >
+
+                        </div>
+                        <p class="name">sanya story</p>
+                    </div>
+
+                    <div class="story">
+                        <div class="profile-pic">
+                            <img src="/asset/profile-2.jpg" >
+
+                        </div>
+                        <p class="name">ruhani story</p>
+                    </div>
+                </div>
+                <!------------------end of stories------------------>
+                  <form class="create-post">
+                    <div class="profile-pic">
+                        <img src="/asset/profile-1.jpg" >
+                    </div>
+                    <input type="text" placeholder="what's on your mind, shraddha? " id="create-post">
+                    <input type="submit" value="post" class="btn btn-primary">
+                  </form>
+                  <div class="feeds">
+                      <!------------------feed 1------------------>
+                    <div class="feed">
+                       <div class="head">
+                        <div class="user">
+                            <div class="profile-pic">
+                                <img src="/asset/profile-20.jpg" >
+                            </div>
+                            <div class="ingo">
+                                <h3>Duskyy_whizz</h3>
+                                <small>Duabi , 15 min ago</small>
+                            </div>
+                        
+                
+                        </div>
+                        <span class="edit">
+
+                        </span>
+                        <div class="photo">
+                            <img src="/asset/feed-1.jpg" >
+                        </div>
+                        <div class="action-button">
+                            <div class="interaction">
+                                <span>  <i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span> <i class="uil uil-share"></i></span>
+                                
+
+                            </div>
+                            <div class="bookmark">
+                                <span> <i class="uis uis-bookmark"></i></span>
+                               
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="/asset/profile-12.jpg"></span>
+                            <span><img src="/asset/profile-13.jpg"></span>
+                            <span><img src="/asset/profile-14.jpg"></span>
+                            <span><img src="/asset/profile-15.jpg"></span>
+                            <p>liked by <b>simran</b> <b>arun</b>  <b>230 others</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Dusky_whizz </b> bringing joy</p>
+                        </div>
+                        <div class=" comment text-muted">view all 230 comments</div>
+
+                       </div>
+
+                       
+                    </div>
+                      <!------------------feed2----------------->
+                    <div class="feed">
+                        <div class="head">
+                         <div class="user">
+                             <div class="profile-pic">
+                                 <img src="/asset/profile-20.jpg" >
+                             </div>
+                             <div class="ingo">
+                                 <h3>Duskyy_whizz</h3>
+                                 <small>Duabi , 15 min ago</small>
+                             </div>
+                         
+                 
+                         </div>
+                         <span class="edit">
+ 
+                         </span>
+                         <div class="photo">
+                             <img src="/asset/feed-1.jpg" >
+                         </div>
+                         <div class="action-button">
+                             <div class="interaction">
+                                 <span>  <i class="uil uil-heart"></i></span>
+                                 <span><i class="uil uil-comment-dots"></i></span>
+                                 <span> <i class="uil uil-share"></i></span>
+                                 
+ 
+                             </div>
+                             <div class="bookmark">
+                                 <span> <i class="uis uis-bookmark"></i></span>
+                                
+                             </div>
+                         </div>
+                         <div class="liked-by">
+                             <span><img src="/asset/profile-12.jpg"></span>
+                             <span><img src="/asset/profile-13.jpg"></span>
+                             <span><img src="/asset/profile-14.jpg"></span>
+                             <span><img src="/asset/profile-15.jpg"></span>
+                             <p>liked by <b>simran</b> <b>arun</b>  <b>230 others</b></p>
+                         </div>
+                         <div class="caption">
+                             <p><b>Dusky_whizz </b> bringing joy</p>
+                         </div>
+                         <div class=" comment text-muted">view all 230 comments</div>
+ 
+                        </div>
+ 
+                        
+                     </div>
+                       <!-----------------feed3----------------->
+                     <div class="feed">
+                        <div class="head">
+                         <div class="user">
+                             <div class="profile-pic">
+                                 <img src="/asset/profile-20.jpg" >
+                             </div>
+                             <div class="ingo">
+                                 <h3>Duskyy_whizz</h3>
+                                 <small>Duabi , 15 min ago</small>
+                             </div>
+                         
+                 
+                         </div>
+                         <span class="edit">
+ 
+                         </span>
+                         <div class="photo">
+                             <img src="/asset/feed-1.jpg" >
+                         </div>
+                         <div class="action-button">
+                             <div class="interaction">
+                                 <span>  <i class="uil uil-heart"></i></span>
+                                 <span><i class="uil uil-comment-dots"></i></span>
+                                 <span> <i class="uil uil-share"></i></span>
+                                 
+ 
+                             </div>
+                             <div class="bookmark">
+                                 <span> <i class="uis uis-bookmark"></i></span>
+                                
+                             </div>
+                         </div>
+                         <div class="liked-by">
+                             <span><img src="/asset/profile-12.jpg"></span>
+                             <span><img src="/asset/profile-13.jpg"></span>
+                             <span><img src="/asset/profile-14.jpg"></span>
+                             <span><img src="/asset/profile-15.jpg"></span>
+                             <p>liked by <b>simran</b> <b>arun</b>  <b>230 others</b></p>
+                         </div>
+                         <div class="caption">
+                             <p><b>Dusky_whizz </b> bringing joy</p>
+                         </div>
+                         <div class=" comment text-muted">view all 230 comments</div>
+ 
+                        </div>
+ 
+                        
+                     </div>
+                       <!------------------feed4----------------->
+                     <div class="feed">
+                        <div class="head">
+                         <div class="user">
+                             <div class="profile-pic">
+                                 <img src="/asset/profile-20.jpg" >
+                             </div>
+                             <div class="ingo">
+                                 <h3>Duskyy_whizz</h3>
+                                 <small>Duabi , 15 min ago</small>
+                             </div>
+                         
+                 
+                         </div>
+                         <span class="edit">
+ 
+                         </span>
+                         <div class="photo">
+                             <img src="/asset/feed-1.jpg" >
+                         </div>
+                         <div class="action-button">
+                             <div class="interaction">
+                                 <span>  <i class="uil uil-heart"></i></span>
+                                 <span><i class="uil uil-comment-dots"></i></span>
+                                 <span> <i class="uil uil-share"></i></span>
+                                 
+ 
+                             </div>
+                             <div class="bookmark">
+                                 <span> <i class="uis uis-bookmark"></i></span>
+                                
+                             </div>
+                         </div>
+                         <div class="liked-by">
+                             <span><img src="/asset/profile-12.jpg"></span>
+                             <span><img src="/asset/profile-13.jpg"></span>
+                             <span><img src="/asset/profile-14.jpg"></span>
+                             <span><img src="/asset/profile-15.jpg"></span>
+                             <p>liked by <b>simran</b> <b>arun</b>  <b>230 others</b></p>
+                         </div>
+                         <div class="caption">
+                             <p><b>Dusky_whizz </b> bringing joy</p>
+                         </div>
+                         <div class=" comment text-muted">view all 230 comments</div>
+ 
+                        </div>
+ 
+                        
+                     </div>
+                  </div>
+            </div>
+
+
+
+            
+            <div class="right"></div>
+      
+        </div>
+
+    </main>
+  
 </body>
 </html>
